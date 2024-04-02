@@ -13,7 +13,6 @@ var drumlength = document.querySelectorAll(".drum").length;
 
       makesound(event.key);
     });
-
     function makesound(key){
 
       switch (key) {
