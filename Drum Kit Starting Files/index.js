@@ -7,12 +7,14 @@ var drumlength = document.querySelectorAll(".drum").length;
     var buttoninnerHTML = this.innerHTML;
 
     makesound( buttoninnerHTML);
+    buttonannimation(buttoninnerHTML);
   });
  }
 
   document.addEventListener("keypress", function(event){
 
     makesound(event.key);
+    buttonannimation(event.key);
     });
 
     function makesound(key){
@@ -58,6 +60,15 @@ var drumlength = document.querySelectorAll(".drum").length;
       }
      }
 
+     function buttonannimation(currentkey){
+      var activeButton = document.querySelector("."+ currentkey);
+      activeButton.classList.add("pressed");
+
+      setTimeout(function() {
+        activeButton.classList.remove("pressed");
+      }, 100);
+
+     }
 
 
 //  var audio = new Audio("sounds/crash.mp3");
