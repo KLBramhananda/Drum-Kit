@@ -1,18 +1,20 @@
 var drumlength = document.querySelectorAll(".drum").length;
+
  for(var i=0; i<drumlength ; i++){
 
   document.querySelectorAll(".drum")[i].addEventListener("click", function(){
 
     var buttoninnerHTML = this.innerHTML;
 
-      makesound( buttoninnerHTML);
+    makesound( buttoninnerHTML);
   });
  }
 
   document.addEventListener("keypress", function(event){
 
-      makesound(event.key);
+    makesound(event.key);
     });
+
     function makesound(key){
 
       switch (key) {
