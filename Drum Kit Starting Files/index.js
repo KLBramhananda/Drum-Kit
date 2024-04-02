@@ -60,15 +60,15 @@ var drumlength = document.querySelectorAll(".drum").length;
       }
      }
 
-     function buttonannimation(currentkey){
-      var activeButton = document.querySelector("."+ currentkey);
-      activeButton.classList.add("pressed");
+function buttonannimation(currentkey){
+  var activeButton = document.querySelector("."+ currentkey);
+  activeButton.classList.add("pressed");
 
-      setTimeout(function() {
-        activeButton.classList.remove("pressed");
-      }, 100);
+  setTimeout(function() {
+    activeButton.classList.remove("pressed");
+  }, 100);
 
-     }
+}
 
 
 //  var audio = new Audio("sounds/crash.mp3");
